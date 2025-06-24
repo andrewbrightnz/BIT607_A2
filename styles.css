@@ -1,3 +1,16 @@
+/* Responsive font size makes the <h1>, <h2> and <p> smaller on a smaller screen */
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 1.2em;
+	}
+	h2 {
+		font-size: 1em;
+	}
+	p {
+		font-size: 0.8em;
+	}
+}
+
 /* Universal box sizing */
 * {
 	box-sizing: border-box;
@@ -15,6 +28,8 @@
 }
 
 .header-text {
+	width: 1000px;
+	margin: 0 auto;
 	position: relative;
 	text-align: center;
 }
@@ -23,22 +38,10 @@
 	position: absolute;
 	top: 50%;
 	right: 20px;
-	transform: translateY(-30%);
+	transform: translateY(-10%);
 	display: flex;
-	gap: 10px;
+	/* gap: 10px; */
 	font-size: 14px;
-}
-/* Responsive font size makes the <h1>, <h2> and <p> smaller on a smaller screen */
-@media screen and (max-width: 600px) {
-	h1 {
-		font-size: 1.2em;
-	}
-	h2 {
-		font-size: 1em;
-	}
-	p {
-		font-size: 0.8em;
-	}
 }
 
 h1,
@@ -49,6 +52,13 @@ h4 {
 	text-align: left;
 	color: white;
 	padding-left: 20px;
+	padding-right: 20px;
+}
+
+p {
+	font-family: "Lato", sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 /* Style the top navigation bar */
 .topnav {
@@ -58,11 +68,12 @@ h4 {
 	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-	background-color: #009999;
+	background-color: #d2d2d2;
 	font-family: "Gloria Hallelujah", sans-serif;
 	font-size: 15px;
 	color: white;
 }
+
 /* Style the topnav links */
 .topnav a {
 	float: left;
@@ -74,21 +85,24 @@ h4 {
 }
 
 .main1 {
-	background-color: #a1a1a1;
-	display: flex;
-	max-width: 1000px;
-	width: 100%;
-	height: 200px;
-	margin: 0 auto;
-}
-.main2 {
-	background-color: #686868;
 	display: flex;
 	justify-content: center;
 	max-width: 1000px;
 	width: 100%;
-	height: 200px;
 	margin: 0 auto;
+	padding-bottom: 20px;
+	background-color: #a1a1a1;
+	color: white;
+}
+.main2 {
+	display: flex;
+	justify-content: center;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	background-color: #686868;
+	color: white;
 }
 
 /* Create two equal columns that float next to each other */
@@ -115,13 +129,25 @@ h4 {
 
 .footer {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
 	justify-content: center;
 	max-width: 1000px;
 	width: 100%;
 	margin: 0 auto;
 	background-color: #404040;
+	font-family: "Lato", sans-serif;
 	color: white;
 	font-size: 11px;
 	text-align: center;
 	padding: 10px;
+}
+
+.footer span:first-child {
+	padding-left: 20px;
+}
+
+.footer span:last-child {
+	margin-left: auto;
+	padding-right: 20px;
 }
