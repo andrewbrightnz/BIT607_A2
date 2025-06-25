@@ -29,7 +29,7 @@
 							type="text"
 							id="username"
 							name="username"
-							placeholder="Snoop Doggy Dogg"
+							placeholder="Snoop Dogg"
 						/><br />
 						<label for="password">Password:</label>
 						<input
@@ -45,7 +45,7 @@
 		</header>
 
 		<nav class="topnav">
-			<a href="#">Home</a>
+			<a class="current-page" href="#">Home</a>
 			<a href="#">Products</a>
 			<a href="#">Services</a>
 			<a href="#">Booking</a>
@@ -56,7 +56,7 @@
 			</div>
 		</nav>
 
-		<div class="main1">
+		<div class="main-light">
 			<div>
 				<h2>Title 1</h2>
 				<p>
@@ -80,7 +80,7 @@
 			</div>
 		</div>
 
-		<div class="main2">
+		<div class="main-dark">
 			<div>
 				<h2>Title 2</h2>
 				<p>
@@ -98,28 +98,183 @@
 			</div>
 		</div>
 
-		<div class="main1">
+		<div class="main-light">
 			<div>
-				<h2>Title 3</h2>
+				<h2>Request a booking</h2>
+				<!-- owner’s name, email address, dog’s name, breed and age, and a submit button -->
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-					optio distinctio dolores sed vero quasi quia rerum, modi ex ipsum id
-					quam esse consequatur dolorum eveniet, necessitatibus molestias dolore
-					eius.
+					Enter your details, and we will be in touch to confirm a day and time
+					for your next booking.
 				</p>
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
-					iste ipsa iure distinctio natus rerum? Suscipit vero nobis blanditiis
-					eveniet eius, nostrum sit at accusantium, eaque ut sunt laborum iste.
-				</p>
+				<form action="/request_booking.php" class="booking-form">
+					<label for="owner_name">Owner's name:</label>
+					<input
+						type="text"
+						id="owner_name"
+						name="owner_name"
+						placeholder="Snoop Dogg"
+					/><br />
+					<label for="owner_email">Email address:</label>
+					<input
+						type="text"
+						id="owner_email"
+						name="owner_email"
+						placeholder="me@gmail.com"
+					/><br />
+					<label for="dog_name">Dog's name:</label>
+					<input
+						type="text"
+						id="dog_name"
+						name="dog_name"
+						placeholder="Rex"
+					/><br />
+					<label for="dog_breed">Breed:</label>
+					<select id="breed" name="dog-breed">
+						<option value="labrador">Labrador Retriever</option>
+						<option value="germanshepherd">German Shepherd</option>
+						<option value="goldenretriever">Golden Retriever</option>
+						<option value="bulldog">Bulldog</option>
+						<option value="poodle">Poodle</option>
+						<option value="beagle">Beagle</option>
+						<option value="rottweiler">Rottweiler</option>
+						<option value="dachshund">Dachshund</option>
+						<option value="siberianhusky">Siberian Husky</option>
+						<option value="boxer">Boxer</option>
+						<option value="other">Other</option></select
+					><br />
+					<label for="dog_age">Dog's age:</label>
+					<input
+						type="integer"
+						id="dog_age"
+						name="dog_age"
+						placeholder="5"
+					/><br />
+					<input type="submit" value="Submit" />
+				</form>
+			</div>
+		</div>
+
+		<div class="main-table">
+			<h2>Services</h2>
+			<p>
+				Snazzy Dog Grooming offers a wide range of services to keep your pet in
+				top condition
+			</p>
+			<div>
+				<table>
+					<tr>
+						<th colspan="3" class="section-heading">
+							<span>Standard Services</span>
+							<hr />
+						</th>
+					</tr>
+
+					<tr>
+						<td class="service-title">Bath and brush</td>
+						<td>Shampoo, blow-dry, brush-out and nail trim</td>
+						<td>$25–$50</td>
+					</tr>
+					<tr>
+						<td class="service-title">Haircut</td>
+						<td>
+							Bath, blow-dry, haircut (based on breed standard or owner's
+							preference) and nail trim
+						</td>
+						<td>$45–$85</td>
+					</tr>
+					<tr>
+						<td class="service-title">Nail trim</td>
+						<td>Trim nails and, in some cases, filing</td>
+						<td>$10–$20</td>
+					</tr>
+					<tr>
+						<td class="service-title">Ear cleaning</td>
+						<td>Gentle cleaning of ears to remove wax and debris</td>
+						<td>$10–$15</td>
+					</tr>
+					<tr>
+						<td class="service-title">Teeth brushing</td>
+						<td>Brushing with pet-safe toothpaste</td>
+						<td>$10–$15</td>
+					</tr>
+
+					<tr>
+						<td class="service-title">Express service</td>
+						<td>For dogs that need minimal grooming or a quick touch-up</td>
+						<td>$15–$25<br />(in addition)</td>
+					</tr>
+					<tr>
+						<td class="service-title">Medicated bath</td>
+						<td>For pets with skin conditions requiring special shampoo.</td>
+						<td>$20–$40<br />(in addition)</td>
+					</tr>
+					<tr>
+						<td class="service-title">Special-breed cuts</td>
+						<td>Breed-specific cuts or styling based on customer preference</td>
+						<td>Quoted after consultation</td>
+					</tr>
+					<tr>
+						<th colspan="3" class="section-heading">
+							<span>Treatments</span>
+							<hr />
+						</th>
+					</tr>
+
+					<tr>
+						<td class="service-title">De-shedding treatment</td>
+						<td>Special shampoo and undercoat removal</td>
+						<td>$20–$40 <br />(in addition)</td>
+					</tr>
+					<tr>
+						<td class="service-title">Flea and tick treatment</td>
+						<td>Shampoo and preventative treatment</td>
+						<td>$15–$30</td>
+					</tr>
+					<tr>
+						<th colspan="3" class="section-heading">
+							<span>Packages</span>
+							<hr />
+						</th>
+					</tr>
+
+					<tr>
+						<td class="service-title">Puppy package</td>
+						<td>Introductory grooming services tailored for puppies</td>
+						<td>$30–$60</td>
+					</tr>
+					<tr>
+						<td class="service-title">Senior dog package</td>
+						<td>
+							Grooming services tailored for older dogs, often with special
+							handling and care
+						</td>
+						<td>$40–$80</td>
+					</tr>
+					<tr>
+						<td class="service-title">Full grooming package</td>
+						<td>
+							Comprehensive grooming service, including bath, haircut, teeth
+							brushing, nail trim and ear cleaning
+						</td>
+						<td>$60–$120</td>
+					</tr>
+					<tr>
+						<td class="service-title">Spa package</td>
+						<td>
+							Bath, haircut, teeth brushing, nail trim and sometimes special
+							scents or conditioners
+						</td>
+						<td>$75–$150</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 
 		<div class="footer">
 			<span>We're open:</span>
-			<span>9–5 Mon–Fri</span>
-			<span>10–2 Saturdays</span>
-			<span>(closed public holidays)</span>
+			<span>9–5 Monday to Friday,</span>
+			<span>10–2 Saturday,</span>
+			<span>but we're closed on public holidays.</span>
 			<span>&copy; 2025 Snazzy Dog Grooming</span>
 		</div>
 	</body>

@@ -72,6 +72,15 @@ p {
 	font-size: 14px;
 }
 
+.booking-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	max-width: 400px;
+	margin: 0 auto;
+	font-family: "Lato", sans-serif;
+}
+
 p {
 	font-family: "Lato", sans-serif;
 	padding-left: 20px;
@@ -101,6 +110,21 @@ p {
 	text-decoration: none;
 }
 
+/* .topnav a.current-page {
+	background-color: #e4d4c8;
+} */
+
+.topnav a.current-page {
+	background-color: #e4d4c8;
+	color: black; /* optional: override default link color */
+	height: 100%;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	padding-left: 20px; /* match or adjust to your topnav spacing */
+	padding-right: 20px; /* match or adjust to your topnav spacing */
+}
+
 .search-container {
 	display: flex;
 	align-items: center;
@@ -115,7 +139,7 @@ a:hover {
 	color: white;
 }
 
-.main1 {
+.main-dark {
 	display: flex;
 	justify-content: center;
 	max-width: 1000px;
@@ -125,12 +149,12 @@ a:hover {
 	background-color: #d0b49f;
 }
 
-.main1 h2 {
+.main-dark h2 {
 	text-align: center;
 	color: rgb(70, 70, 70);
 }
 
-.main2 {
+.main-light {
 	display: flex;
 	justify-content: center;
 	max-width: 1000px;
@@ -141,10 +165,52 @@ a:hover {
 	color: rgb(70, 70, 70);
 }
 
-.main2 h2 {
+.main-light h2 {
 	text-align: center;
 	color: rgb(70, 70, 70);
 }
+
+.main-table {
+	justify-content: center;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 6px;
+	padding-bottom: 50px;
+	/* Choose a background to suit */
+	/* Light background */
+	background-color: #e4d4c8;
+	/* Dark background */
+	background-color: #d0b49f;
+	/* Text colour */
+	color: rgb(70, 70, 70);
+}
+
+.main-table h2 {
+	text-align: center;
+}
+
+table {
+	justify-content: center;
+	width: 100%;
+	padding: 20px;
+	font-family: "Lato", sans-serif;
+}
+
+th,
+td {
+	padding: 10px;
+}
+
+.section-heading {
+	font-family: "Gloria Hallelujah", sans-serif;
+	text-align: center;
+}
+
+.service-title {
+	font-weight: bold;
+}
+
 /* Create two equal columns that float next to each other */
 .column {
 	float: left;
