@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<style>
+			.topnav {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				background-color: #d2d2d2;
+				padding: 10px;
+				font-family: sans-serif;
+			}
+			.topnav a {
+				color: white;
+				background: gray;
+				text-decoration: none;
+				padding: 10px 14px;
+			}
+			.search-container {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+			}
+			.search-label {
+				color: white;
+				margin: 0;
+			}
+			.search-field {
+				padding: 6px;
+				font-size: 14px;
+				border: 1px solid #aaa;
+				border-radius: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="topnav">
+			<a href="#">Home</a>
+			<a href="#">Products</a>
+			<a href="#">Services</a>
+			<a href="#">Booking</a>
+			<div class="search-container">
+				<span class="search-label">Search:</span>
+				<input
+					type="text"
+					class="search-field"
+					placeholder="Enter search term here"
+				/>
+			</div>
+		</nav>
+	</body>
+</html>

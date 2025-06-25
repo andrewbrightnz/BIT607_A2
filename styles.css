@@ -68,7 +68,7 @@ p {
 	padding-left: 20px;
 	padding-right: 20px;
 }
-/* Style the top navigation bar */
+
 .topnav {
 	display: flex;
 	align-items: center;
@@ -80,24 +80,22 @@ p {
 	background-color: #d2d2d2;
 	font-family: "Gloria Hallelujah", sans-serif;
 	font-size: 15px;
-	padding: 10px;
+	padding: 20px;
 }
 
 .topnav a {
 	color: white;
 	text-decoration: none;
-	padding: 10px 14px;
+}
+
+.search-container {
+	display: flex;
+	align-items: center;
+	gap: 5px; /* Tight spacing between label and field */
 }
 
 .search-label {
 	color: white;
-}
-
-.search-field {
-	padding: 6px;
-	font-size: 14px;
-	border: 1px solid #aaa;
-	border-radius: 4px;
 }
 
 a:hover {
@@ -114,6 +112,11 @@ a:hover {
 	background-color: #a1a1a1;
 	color: white;
 }
+
+.main1 h2 {
+	text-align: center;
+}
+
 .main2 {
 	display: flex;
 	justify-content: center;
@@ -125,6 +128,9 @@ a:hover {
 	color: white;
 }
 
+.main2 h2 {
+	text-align: center;
+}
 /* Create two equal columns that float next to each other */
 .column {
 	float: left;
