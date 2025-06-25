@@ -16,14 +16,25 @@
 	box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+	font-family: "Gloria Hallelujah", sans-serif;
+	text-align: left;
+	color: rgb(70, 70, 70);
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 /* Style the header */
 .header {
-	background-color: #c6c6c6;
+	background-color: #e4d4c8;
 	font-family: "Gloria Hallelujah", sans-serif;
 	font-size: 20px;
-	color: white;
 	text-align: center;
-	padding: 10px;
+	padding-bottom: 5px;
 	position: relative;
 }
 
@@ -32,6 +43,15 @@
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
+	color: rgb(70, 70, 70);
+}
+
+.header-text h1 {
+	color: rgb(70, 70, 70);
+}
+
+.header-text:first-child {
+	font-size: x-large;
 }
 
 .login-form {
@@ -52,17 +72,6 @@
 	font-size: 14px;
 }
 
-h1,
-h2,
-h3,
-h4 {
-	font-family: "Gloria Hallelujah", sans-serif;
-	text-align: left;
-	color: white;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
 p {
 	font-family: "Lato", sans-serif;
 	padding-left: 20px;
@@ -72,15 +81,19 @@ p {
 .topnav {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	gap: 20px;
 	max-width: 1000px;
 	width: 100%;
 	margin: 0 auto;
-	background-color: #d2d2d2;
+	/* background-color: rgb(200, 200, 200); */
+	background-color: #523a28;
 	font-family: "Gloria Hallelujah", sans-serif;
 	font-size: 15px;
-	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .topnav a {
@@ -99,7 +112,7 @@ p {
 }
 
 a:hover {
-	color: red;
+	color: white;
 }
 
 .main1 {
@@ -109,12 +122,12 @@ a:hover {
 	width: 100%;
 	margin: 0 auto;
 	padding-bottom: 20px;
-	background-color: #a1a1a1;
-	color: white;
+	background-color: #d0b49f;
 }
 
 .main1 h2 {
 	text-align: center;
+	color: rgb(70, 70, 70);
 }
 
 .main2 {
@@ -124,12 +137,13 @@ a:hover {
 	width: 100%;
 	margin: 0 auto;
 	padding-bottom: 50px;
-	background-color: #686868;
-	color: white;
+	background-color: #e4d4c8;
+	color: rgb(70, 70, 70);
 }
 
 .main2 h2 {
 	text-align: center;
+	color: rgb(70, 70, 70);
 }
 /* Create two equal columns that float next to each other */
 .column {
@@ -161,7 +175,7 @@ a:hover {
 	max-width: 1000px;
 	width: 100%;
 	margin: 0 auto;
-	background-color: #404040;
+	background-color: #523a28;
 	font-family: "Lato", sans-serif;
 	color: white;
 	font-size: 11px;
@@ -169,6 +183,7 @@ a:hover {
 	padding: 10px;
 }
 
+/* Split footer text into left and right blocks */
 .footer span:first-child {
 	padding-left: 20px;
 }
