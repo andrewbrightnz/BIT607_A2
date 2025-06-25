@@ -34,13 +34,21 @@
 	text-align: center;
 }
 
-.login-text {
+.login-form {
 	position: absolute;
 	top: 50%;
 	right: 20px;
 	transform: translateY(-10%);
 	display: flex;
-	/* gap: 10px; */
+	font-size: 14px;
+}
+
+.search-form {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-10%);
+	display: flex;
 	font-size: 14px;
 }
 
@@ -63,25 +71,37 @@ p {
 /* Style the top navigation bar */
 .topnav {
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
 	max-width: 1000px;
 	width: 100%;
 	margin: 0 auto;
-	overflow: hidden;
 	background-color: #d2d2d2;
 	font-family: "Gloria Hallelujah", sans-serif;
 	font-size: 15px;
+	padding: 10px;
+}
+
+.topnav a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 14px;
+}
+
+.search-label {
 	color: white;
 }
 
-/* Style the topnav links */
-.topnav a {
-	float: left;
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 14px;
-	text-decoration: none;
+.search-field {
+	padding: 6px;
+	font-size: 14px;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+}
+
+a:hover {
+	color: red;
 }
 
 .main1 {
