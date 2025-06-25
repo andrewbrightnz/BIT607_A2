@@ -82,18 +82,32 @@
 
 		<div class="main-dark">
 			<div>
-				<h2>Title 2</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-					optio distinctio dolores sed vero quasi quia rerum, modi ex ipsum id
-					quam esse consequatur dolorum eveniet, necessitatibus molestias dolore
-					eius.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-					dolorum, illo voluptatibus tempora earum commodi. Maxime, nihil hic,
-					error earum ratione quis quod et voluptatum distinctio sunt itaque.
-					Natus, labore.
+				<h2>Photo gallery</h2>
+				<div class="photo_gallery">
+					<div class="photo_frame photo01"></div>
+					<div class="photo_frame photo02"></div>
+					<div class="photo_frame photo03"></div>
+					<div class="photo_frame photo04"></div>
+					<div class="photo_frame photo05"></div>
+					<div class="photo_frame photo06"></div>
+					<div class="photo_frame photo07"></div>
+					<div class="photo_frame photo08"></div>
+					<div class="photo_frame photo09"></div>
+					<div class="photo_frame photo10"></div>
+					<div class="photo_frame photo11"></div>
+					<div class="photo_frame photo12"></div>
+					<div class="photo_frame photo13"></div>
+					<div class="photo_frame photo14"></div>
+					<div class="photo_frame photo15"></div>
+					<div class="photo_frame photo16"></div>
+				</div>
+				<p style="text-decoration: none">
+					Photos courtesy of:
+					<a
+						href="https://www.pexels.com"
+						style="text-decoration: none; color: black; font-size: smaller"
+						>Pexels.com</a
+					>
 				</p>
 			</div>
 		</div>
@@ -103,8 +117,7 @@
 				<h2>Request a booking</h2>
 				<!-- owner’s name, email address, dog’s name, breed and age, and a submit button -->
 				<p>
-					Enter your details, and we will be in touch to confirm a day and time
-					for your next booking.
+					Enter your details, and we will be in touch to confirm your booking.
 				</p>
 				<form action="/request_booking.php" class="booking-form">
 					<label for="owner_name">Owner's name:</label>
@@ -149,6 +162,15 @@
 						name="dog_age"
 						placeholder="5"
 					/><br />
+					<label for="owner_notes">Additional Notes:</label>
+					<textarea
+						id="owner_notes"
+						name="owner_notes"
+						maxlength="300"
+						rows="4"
+						placeholder="Enter any extra details here (max 300 characters)"
+					></textarea>
+					<br />
 					<input type="submit" value="Submit" />
 				</form>
 			</div>
