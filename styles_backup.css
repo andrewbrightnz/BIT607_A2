@@ -1,0 +1,371 @@
+/* Responsive font size makes the <h1>, <h2> and <p> smaller on a smaller screen */
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 1.2em;
+	}
+	h2 {
+		font-size: 1em;
+	}
+	p {
+		font-size: 0.8em;
+	}
+}
+
+/* Universal box sizing */
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	font-family: "Gloria Hallelujah", sans-serif;
+	text-align: left;
+	color: rgb(70, 70, 70);
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Style the header */
+.header {
+	background-color: #e4d4c8;
+	font-family: "Gloria Hallelujah", sans-serif;
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 5px;
+	position: relative;
+}
+
+.header-text {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	color: rgb(70, 70, 70);
+}
+
+.header-text h1 {
+	color: rgb(70, 70, 70);
+}
+
+.header-text:first-child {
+	font-size: x-large;
+}
+
+.login-form {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-10%);
+	display: flex;
+	font-size: 14px;
+}
+
+.search-form {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-10%);
+	display: flex;
+	font-size: 14px;
+}
+
+.booking-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	max-width: 200px;
+	margin: 0 auto;
+	font-family: "Lato", sans-serif;
+}
+
+p {
+	font-family: "Lato", sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.topnav {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 20px;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	/* background-color: rgb(200, 200, 200); */
+	background-color: #523a28;
+	font-family: "Gloria Hallelujah", sans-serif;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.topnav a {
+	color: white;
+	text-decoration: none;
+}
+
+/* .topnav a.current-page {
+	background-color: #e4d4c8;
+} */
+
+/* .topnav a.current-page {
+	background-color: #e4d4c8;
+	color: black; /* optional: override default link color */
+	height: 100%;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	padding-left: 20px; /* match or adjust to your topnav spacing */
+	padding-right: 20px; /* match or adjust to your topnav spacing */
+} */
+
+.search-container {
+	display: flex;
+	align-items: center;
+	gap: 5px; /* Tight spacing between label and field */
+}
+
+.search-label {
+	color: white;
+}
+
+a:hover {
+	color: yellow;
+}
+
+.main-dark {
+	display: flex;
+	justify-content: center;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	background-color: #d0b49f;
+}
+
+.main-dark h2 {
+	text-align: center;
+	color: rgb(70, 70, 70);
+}
+
+.main-light {
+	display: flex;
+	justify-content: center;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	background-color: #e4d4c8;
+	color: rgb(70, 70, 70);
+}
+
+.main-light > div {
+	width: 100%;
+	text-align: center;
+}
+
+.main-light h2 {
+	text-align: center;
+	color: rgb(70, 70, 70);
+}
+
+.main-table {
+	justify-content: center;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 6px;
+	padding-bottom: 50px;
+	/* Choose a background to suit */
+	/* Light background */
+	background-color: #e4d4c8;
+	/* Dark background */
+	background-color: #d0b49f;
+	/* Text colour */
+	color: rgb(70, 70, 70);
+}
+
+.main-table h2 {
+	text-align: center;
+}
+
+table {
+	justify-content: center;
+	width: 100%;
+	padding: 20px;
+	font-family: "Lato", sans-serif;
+}
+
+th,
+td {
+	padding: 10px;
+}
+
+.section-heading {
+	font-family: "Gloria Hallelujah", sans-serif;
+	text-align: center;
+}
+
+.service-title {
+	font-weight: bold;
+}
+
+.photo_gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	grid-template-columns: repeat(4, 1fr); /* 4 columns */
+	gap: 10px; /* spacing between items */
+	max-width: 800px;
+}
+
+.hero-image {
+	display: block;
+	margin: 0 auto;
+	background: transparent;
+	width: 500px;
+}
+
+.photo-credit-vertical	{
+	writing-mode: vertical-rl;
+	/* text-orientation: mixed; */
+	transform: rotate(180deg); /* optional: flips to make it top-to-bottom */
+	font-size: smaller;
+}
+
+.photo-credit-vertical a{
+	text-decoration: none;
+	color: black;
+}
+
+.photo_frame {
+	background-color: #ffffcc;
+	margin: 10px;
+	padding: 20px;
+	width: 150px;
+	height: 150px;
+	font-size: 30px;
+	border: 1px solid #3e3e3e;
+	border-radius: 6px;
+	border-style: dashed;
+	background-size: cover;
+	background-position: center;
+}
+.photo01 {
+	background-image: url("/img/dog01.jpg");
+}
+
+.photo02 {
+	background-image: url("/img/dog02.jpg");
+}
+
+.photo03 {
+	background-image: url("/img/dog03.jpg");
+}
+
+.photo04 {
+	background-image: url("/img/dog04.jpg");
+}
+
+.photo05 {
+	background-image: url("/img/dog05.jpg");
+}
+
+.photo06 {
+	background-image: url("/img/dog06.jpg");
+}
+
+.photo07 {
+	background-image: url("/img/dog07.jpg");
+}
+
+.photo08 {
+	background-image: url("/img/dog08.jpg");
+}
+
+.photo09 {
+	background-image: url("/img/dog09.jpg");
+}
+
+.photo10 {
+	background-image: url("/img/dog10.jpg");
+}
+
+.photo11 {
+	background-image: url("/img/dog11.jpg");
+}
+
+.photo12 {
+	background-image: url("/img/dog12.jpg");
+}
+
+.photo13 {
+	background-image: url("/img/dog13.jpg");
+}
+
+.photo14 {
+	background-image: url("/img/dog14.jpg");
+}
+
+.photo15 {
+	background-image: url("/img/dog15.jpg");
+}
+
+.photo16 {
+	background-image: url("/img/dog16.jpg");
+}
+
+/* Create four equal columns that float next to each other */
+.column {
+	float: left;
+	width: 25%;
+	padding: 15px;
+	background-color: #e6ffff;
+}
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other
+  instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+	}
+}
+
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #523a28;
+	font-family: "Lato", sans-serif;
+	color: white;
+	font-size: 11px;
+	text-align: center;
+	padding: 10px;
+}
+
+/* Split footer text into left and right blocks */
+.footer span:first-child {
+	padding-left: 20px;
+}
+
+.footer span:last-child {
+	margin-left: auto;
+	padding-right: 20px;
+}
