@@ -114,7 +114,7 @@ p {
 	background-color: #e4d4c8;
 } */
 
-.topnav a.current-page {
+/* .topnav a.current-page {
 	background-color: #e4d4c8;
 	color: black; /* optional: override default link color */
 	height: 100%;
@@ -123,7 +123,7 @@ p {
 	border-radius: 5px;
 	padding-left: 20px; /* match or adjust to your topnav spacing */
 	padding-right: 20px; /* match or adjust to your topnav spacing */
-}
+} */
 
 .search-container {
 	display: flex;
@@ -163,6 +163,11 @@ a:hover {
 	padding-bottom: 50px;
 	background-color: #e4d4c8;
 	color: rgb(70, 70, 70);
+}
+
+.main-light > div {
+	width: 100%;
+	text-align: center;
 }
 
 .main-light h2 {
@@ -219,6 +224,25 @@ td {
 	grid-template-columns: repeat(4, 1fr); /* 4 columns */
 	gap: 10px; /* spacing between items */
 	max-width: 800px;
+}
+
+.hero-image {
+	display: block;
+	margin: 0 auto;
+	background: transparent;
+	width: 500px;
+}
+
+.photo-credit-vertical	{
+	writing-mode: vertical-rl;
+	/* text-orientation: mixed; */
+	transform: rotate(180deg); /* optional: flips to make it top-to-bottom */
+	font-size: smaller;
+}
+
+.photo-credit-vertical a{
+	text-decoration: none;
+	color: black;
 }
 
 .photo_frame {
