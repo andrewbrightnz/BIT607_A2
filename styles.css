@@ -96,6 +96,7 @@ p {
 	font-family: "Lato", sans-serif;
 	padding-left: 20px;
 	padding-right: 20px;
+	font-size: 18px;
 }
 
 .topnav {
@@ -109,7 +110,7 @@ p {
 	/* background-color: rgb(200, 200, 200); */
 	background-color: #523a28;
 	font-family: "Gloria Hallelujah", sans-serif;
-	font-size: 15px;
+	font-size: 18px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 20px;
@@ -212,6 +213,13 @@ td {
 	font-weight: bold;
 }
 
+.hero-image {
+	display: block;
+	margin: 0 auto;
+	background: transparent;
+	width: 500px;
+}
+
 .photo_gallery {
 	display: flex;
 	flex-direction: row;
@@ -222,21 +230,11 @@ td {
 	max-width: 800px;
 }
 
-.hero-image {
-	display: block;
-	margin: 0 auto;
-	background: transparent;
-	width: 500px;
-}
-
-.photo-credit-vertical {
-	writing-mode: vertical-rl;
-	/* text-orientation: mixed; */
-	transform: rotate(180deg); /* optional: flips to make it top-to-bottom */
+.photo_credit {
 	font-size: smaller;
 }
 
-.photo-credit-vertical a {
+.photo_credit a {
 	text-decoration: none;
 	color: black;
 }
@@ -322,7 +320,18 @@ td {
 #email,
 #map {
 	display: block;
+	padding-top: 10px;
 }
+
+#contact p {
+	text-align: center;
+}
+
+#map iframe {
+	display: block;
+	margin: 0 auto;
+}
+
 /* Create four equal columns that float next to each other */
 .column {
 	float: left;
@@ -356,7 +365,7 @@ td {
 	background-color: #523a28;
 	font-family: "Lato", sans-serif;
 	color: white;
-	font-size: 11px;
+	font-size: 15px;
 	text-align: center;
 	padding: 10px;
 }
